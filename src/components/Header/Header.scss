@@ -1,0 +1,27 @@
+.header {
+  height: 45px;
+  background-color: darken($color: #2f2c43, $amount: 2%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: auto;
+
+  button {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 5px;
+    border-radius: 5%;
+    cursor: pointer;
+    transition: 0.2s;
+    &:hover {
+      $hover-color: lighten(
+        $color: #2f2c43,
+        $amount: 10%,
+      );
+      background-color: $hover-color;
+    }
+  }
+}

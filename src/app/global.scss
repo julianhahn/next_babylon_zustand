@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;700&display=swap");
+
+html,
+body {
+  font-family: "Inter", sans-serif;
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+/* some css for the debugger from babylon */
+body #scene-explorer-host {
+  position: absolute !important;
+  left: 0px;
+  top: 0px;
+  z-index: 3;
+  margin-top: 45px;
+}
+
+body #inspector-host {
+  position: absolute !important;
+  right: 0px;
+  top: 0px;
+  z-index: 3;
+  margin-top: 45px;
+}
