@@ -6,7 +6,10 @@ import {
   MeshBuilder,
   Vector3,
   HemisphericLight,
-} from "babylonjs";
+} from "@babylonjs/core";
+
+import "@babylonjs/core/Debug/debugLayer"; // Augments the scene with the debug methods
+import "@babylonjs/inspector"; // Injects a local ES6 version of the inspector to prevent automatically relying on the none compatible version
 
 import { GridMaterial } from "@babylonjs/materials";
 import { createCamera } from "./camera/camera";
@@ -39,7 +42,6 @@ export const createScene = async (
   scene.clearColor = Color4.FromHexString("#2F2C43");
   scene.ambientColor = Color3.White();
   scene.autoClearDepthAndStencil = false;
-  await scene.debugLayer.show({ overlay: true });
 
   scene.freezeMaterials();
 
@@ -61,8 +63,13 @@ export const createScene = async (
   sphere.position.y = 1;
 
   // assign the grid material to the ground and then create the grid
-  /* 
-  let gridMaterial = new GridMaterial("grid", scene); */
+
+  // only available in umd modules, aka 'import babylonjs'
+  // await scene.debugLayer.show({ overlay: true });
+
+  scene.debugLayer.show();
+
+  let gridMaterial = new GridMaterial("grid", scene);
 
   let ground = MeshBuilder.CreateGround(
     "ground",

@@ -3,7 +3,7 @@ import {
   ArcRotateCameraPointersInput,
   Scene,
   Vector3,
-} from "babylonjs";
+} from "@babylonjs/core";
 
 import { ArcRotateCameraCustomInput } from "./camera_input";
 

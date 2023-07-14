@@ -1,4 +1,4 @@
-import { ArcRotateCamera, ICameraInput, Nullable } from "babylonjs";
+import { ArcRotateCamera, ICameraInput, Nullable } from "@babylonjs/core";
 
 class ArcRotateCameraCustomInput implements ICameraInput<ArcRotateCamera> {
   camera: Nullable<ArcRotateCamera> = null;

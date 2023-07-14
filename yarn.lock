@@ -9,10 +9,44 @@
   dependencies:
     regenerator-runtime "^0.13.11"
 
+"@babylonjs/core@^6.12.1":
+  version "6.12.1"
+  resolved "https://registry.yarnpkg.com/@babylonjs/core/-/core-6.12.1.tgz#f6d197a3c5968c6bf9e9661d0defe5d4d4329ce4"
+  integrity sha512-8Rtrz8rki7UKqhYrGrYLtPs8txJmkMONJgbGL7JfqyYwaMBjAGGSHoAJmlseINir1lEDX9HNalT7SklUq6FAkg==
+
+"@babylonjs/gui-editor@^6.12.1":
+  version "6.12.1"
+  resolved "https://registry.yarnpkg.com/@babylonjs/gui-editor/-/gui-editor-6.12.1.tgz#7452a5fc6191491fd3d9175f20d1a86934cd45e5"
+  integrity sha512-cjwSj3s+KppAUVCqKNDo2kI5kddT8K2SpAoZz+mgDRvBtYcMS0oXP5JPamuGZGri9n51q4BzEJwLy2EegVGeyA==
+
+"@babylonjs/gui@^6.12.1":
+  version "6.12.1"
+  resolved "https://registry.yarnpkg.com/@babylonjs/gui/-/gui-6.12.1.tgz#28a5bed4cea14491a8ee256ce1da9bd4a576e924"
+  integrity sha512-BA2cmNIcSRQ/1DriS0HczP1G5OUgZdLBSLRw9f10W6frhbf+EAdh7Qmrz87sfSjC4pQX9Yer6TQT//lVD+eFgQ==
+
+"@babylonjs/inspector@^6.12.1":
+  version "6.12.1"
+  resolved "https://registry.yarnpkg.com/@babylonjs/inspector/-/inspector-6.12.1.tgz#56b68e0935b777938e533360146b8cf90dd86444"
+  integrity sha512-p1ZBMQrDAlQdj3oGwpxIL07h6BQ3rD5Bj9szqZwYl3qikseKYz3XnY4UuC3888e2QFF56UEGZMabfzRENuqgzQ==
+  dependencies:
+    "@fortawesome/fontawesome-svg-core" "^6.1.0"
+    "@fortawesome/free-regular-svg-icons" "^6.0.0"
+    "@fortawesome/free-solid-svg-icons" "^6.0.0"
+
+"@babylonjs/loaders@^6.12.1":
+  version "6.12.1"
+  resolved "https://registry.yarnpkg.com/@babylonjs/loaders/-/loaders-6.12.1.tgz#f167012e1be026b31abe328fc2f197983b43c1e3"
+  integrity sha512-srGP0VIgO60raXKTFjCUZmgVuV726MMMb/KsHFxN8G0JEfEwhI6M3dzavd52uv8BdveQZdWlmrG/j1Doj0Qguw==
+
 "@babylonjs/materials@^6.11.2":
   version "6.11.2"
   resolved "https://registry.yarnpkg.com/@babylonjs/materials/-/materials-6.11.2.tgz#ece839ccf589c047034ac0b3f25cc25d13e649fe"
   integrity sha512-wQ4JaDDY5YyfCPDzK8pUDZcmHdoVNs9r8q4HRX0rnuujW5PciU/7QaTW9UGuGwFetYzDXBXVe6eZNdpiBez1lA==
+
+"@babylonjs/serializers@^6.12.1":
+  version "6.12.1"
+  resolved "https://registry.yarnpkg.com/@babylonjs/serializers/-/serializers-6.12.1.tgz#d446d6a2bafaeb5a4b0e1bad24677a9bcedf82b5"
+  integrity sha512-QL46P7SPee1c7cIOdC8uR/0rXdN46pP/O4RuLcTEG96joZGRMaUTX5Gq3zEjZd8oH4OK8iT5sFpODinSaDkRtg==
 
 "@eslint-community/eslint-utils@^4.2.0":
   version "4.4.0"
@@ -45,6 +79,32 @@
   version "8.42.0"
   resolved "https://registry.yarnpkg.com/@eslint/js/-/js-8.42.0.tgz#484a1d638de2911e6f5a30c12f49c7e4a3270fb6"
   integrity sha512-6SWlXpWU5AvId8Ac7zjzmIOqMOba/JWY8XZ4A7q7Gn1Vlfg/SFFIlrtHXt9nPn4op9ZPAkl91Jao+QQv3r/ukw==
+
+"@fortawesome/fontawesome-common-types@6.4.0":
+  version "6.4.0"
+  resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome-common-types/-/fontawesome-common-types-6.4.0.tgz#88da2b70d6ca18aaa6ed3687832e11f39e80624b"
+  integrity sha512-HNii132xfomg5QVZw0HwXXpN22s7VBHQBv9CeOu9tfJnhsWQNd2lmTNi8CSrnw5B+5YOmzu1UoPAyxaXsJ6RgQ==
+
+"@fortawesome/fontawesome-svg-core@^6.1.0":
+  version "6.4.0"
+  resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome-svg-core/-/fontawesome-svg-core-6.4.0.tgz#3727552eff9179506e9203d72feb5b1063c11a21"
+  integrity sha512-Bertv8xOiVELz5raB2FlXDPKt+m94MQ3JgDfsVbrqNpLU9+UE2E18GKjLKw+d3XbeYPqg1pzyQKGsrzbw+pPaw==
+  dependencies:
+    "@fortawesome/fontawesome-common-types" "6.4.0"
+
+"@fortawesome/free-regular-svg-icons@^6.0.0":
+  version "6.4.0"
+  resolved "https://registry.yarnpkg.com/@fortawesome/free-regular-svg-icons/-/free-regular-svg-icons-6.4.0.tgz#cacc53bd8d832d46feead412d9ea9ce80a55e13a"
+  integrity sha512-ZfycI7D0KWPZtf7wtMFnQxs8qjBXArRzczABuMQqecA/nXohquJ5J/RCR77PmY5qGWkxAZDxpnUFVXKwtY/jPw==
+  dependencies:
+    "@fortawesome/fontawesome-common-types" "6.4.0"
+
+"@fortawesome/free-solid-svg-icons@^6.0.0":
+  version "6.4.0"
+  resolved "https://registry.yarnpkg.com/@fortawesome/free-solid-svg-icons/-/free-solid-svg-icons-6.4.0.tgz#48c0e790847fa56299e2f26b82b39663b8ad7119"
+  integrity sha512-kutPeRGWm8V5dltFP1zGjQOEAzaLZj4StdQhWVZnfGFCvAPVvHh8qk5bRrU4KXnRRRNni5tKQI9PBAdI6MP8nQ==
+  dependencies:
+    "@fortawesome/fontawesome-common-types" "6.4.0"
 
 "@humanwhocodes/config-array@^0.11.10":
   version "0.11.10"
@@ -375,11 +435,6 @@ axobject-query@^3.1.1:
   integrity sha512-jsyHu61e6N4Vbz/v18DHwWYKK0bSWLqn47eeDSKPB7m8tqMHF9YJ+mhIk2lVteyZrY8tnSj/jHOv4YiTCuCJgg==
   dependencies:
     dequal "^2.0.3"
-
-babylonjs@^6.11.2:
-  version "6.11.2"
-  resolved "https://registry.yarnpkg.com/babylonjs/-/babylonjs-6.11.2.tgz#5edd1148aef362dbb2eefceb73ca8bebecc0552d"
-  integrity sha512-4jqsMO8ctL7c421/0J1o77DR1I8bgcDhOyYNC1iKuC9KA3kPZ2BkPIs6yOA6k8AUHrcNilkHhzX5nQF3nv9obA==
 
 balanced-match@^1.0.0:
   version "1.0.2"
