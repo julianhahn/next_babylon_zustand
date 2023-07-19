@@ -35,6 +35,16 @@ export const createScene = async (
   console.log("cre  ate a new Scene");
   const engine = createEngine(canvas);
   const scene = new Scene(engine, { useGeometryUniqueIdsMap: true });
+
+  Promise.all([
+    import("@babylonjs/core/Debug/debugLayer"),
+    import("@babylonjs/inspector"),
+  ]).then((_values) => {
+    scene.debugLayer.show({
+      // config goes here, if needed
+    });
+  });
+
   scene.useRightHandedSystem = true;
   scene.clearColor = Color4.FromHexString("#2F2C43");
   scene.ambientColor = Color3.White();
