@@ -1,18 +1,13 @@
-import {
-  Color3,
-  Color4,
-  Engine,
-  Scene,
-  MeshBuilder,
-  Vector3,
-  HemisphericLight,
-} from "@babylonjs/core";
 
-import "@babylonjs/core/Debug/debugLayer"; // Augments the scene with the debug methods
-import "@babylonjs/inspector"; // Injects a local ES6 version of the inspector to prevent automatically relying on the none compatible version
 
-import { GridMaterial } from "@babylonjs/materials";
+import { Engine } from "@babylonjs/core/Engines/engine";
 import { createCamera } from "./camera/camera";
+import { Scene } from "@babylonjs/core/scene";
+import { Color3, Color4 } from "@babylonjs/core/Maths/math.color";
+import { HemisphericLight } from "@babylonjs/core/Lights/hemisphericLight";
+import { Vector3 } from "@babylonjs/core/Maths/math.vector";
+import { MeshBuilder } from "@babylonjs/core/Meshes/meshBuilder";
+import { GridMaterial } from "@babylonjs/materials/grid/gridMaterial";
 
 const createEngine = (canvas: HTMLCanvasElement) => {
   const engine = new Engine(
@@ -67,7 +62,14 @@ export const createScene = async (
   // only available in umd modules, aka 'import babylonjs'
   // await scene.debugLayer.show({ overlay: true });
 
-  scene.debugLayer.show();
+  void Promise.all([
+    import("@babylonjs/core/Debug/debugLayer"),
+    import("@babylonjs/inspector"),
+  ]).then((_values) => {
+    scene.debugLayer.show({
+
+    });
+  });
 
   let gridMaterial = new GridMaterial("grid", scene);
 

@@ -1,11 +1,10 @@
-import {
-  ArcRotateCamera,
-  ArcRotateCameraPointersInput,
-  Scene,
-  Vector3,
-} from "@babylonjs/core";
 
+
+import { ArcRotateCamera } from "@babylonjs/core/Cameras/arcRotateCamera";
 import { ArcRotateCameraCustomInput } from "./camera_input";
+import { Vector3 } from "@babylonjs/core/Maths/math.vector";
+import { ArcRotateCameraPointersInput } from "@babylonjs/core/Cameras/Inputs/arcRotateCameraPointersInput";
+import { Scene } from "@babylonjs/core/scene";
 
 export const createCamera = (scene: Scene, canvas: HTMLCanvasElement) => {
   const camera = new ArcRotateCamera(
