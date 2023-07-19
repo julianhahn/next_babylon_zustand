@@ -8,9 +8,6 @@ import {
   HemisphericLight,
 } from "@babylonjs/core";
 
-import "@babylonjs/core/Debug/debugLayer"; // Augments the scene with the debug methods
-import "@babylonjs/inspector"; // Injects a local ES6 version of the inspector to prevent automatically relying on the none compatible version
-
 import { GridMaterial } from "@babylonjs/materials";
 import { createCamera } from "./camera/camera";
 
@@ -35,7 +32,7 @@ const createEngine = (canvas: HTMLCanvasElement) => {
 export const createScene = async (
   canvas: HTMLCanvasElement
 ): Promise<Scene> => {
-  console.log("create a new Scene");
+  console.log("cre  ate a new Scene");
   const engine = createEngine(canvas);
   const scene = new Scene(engine, { useGeometryUniqueIdsMap: true });
   scene.useRightHandedSystem = true;
@@ -52,6 +49,7 @@ export const createScene = async (
 
   // Default intensity is 1. Let's dim the light a small amount
   light.intensity = 0.7;
+
   // Our built-in 'sphere' shape.
   var sphere = MeshBuilder.CreateSphere(
     "sphere",
@@ -62,23 +60,19 @@ export const createScene = async (
   // Move the sphere upward 1/2 its height
   sphere.position.y = 1;
 
-  // assign the grid material to the ground and then create the grid
-
-  // only available in umd modules, aka 'import babylonjs'
-  // await scene.debugLayer.show({ overlay: true });
-
-  scene.debugLayer.show();
-
   let gridMaterial = new GridMaterial("grid", scene);
+  gridMaterial.opacity = 0.9;
+  gridMaterial.majorUnitFrequency = 10;
 
   let ground = MeshBuilder.CreateGround(
     "ground",
     {
-      width: 5,
-      height: 5,
+      width: 1000,
+      height: 1000,
     },
     scene
   );
+  ground.material = gridMaterial;
 
   engine.runRenderLoop(() => {
     scene.render();
