@@ -9,6 +9,8 @@ import { Vector3 } from "@babylonjs/core/Maths/math.vector";
 import { MeshBuilder } from "@babylonjs/core/Meshes/meshBuilder";
 import { GridMaterial } from "@babylonjs/materials/grid/gridMaterial";
 
+import "@babylonjs/core/Materials/standardMaterial";
+
 const createEngine = (canvas: HTMLCanvasElement) => {
   const engine = new Engine(
     canvas,
