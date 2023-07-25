@@ -1,14 +1,13 @@
-import {
-  Color3,
-  Color4,
-  Engine,
-  Scene,
-  MeshBuilder,
-  Vector3,
-  HemisphericLight,
-} from "@babylonjs/core";
+import { Engine } from "@babylonjs/core/Engines/engine";
+import { Scene } from "@babylonjs/core/scene";
+import { Color3, Color4 } from "@babylonjs/core/Maths/math.color";
+import { HemisphericLight } from "@babylonjs/core/Lights/hemisphericLight";
+import { Vector3 } from "@babylonjs/core/Maths/math.vector";
+import { MeshBuilder } from "@babylonjs/core/Meshes/meshBuilder";
+import { GridMaterial } from "@babylonjs/materials/grid/gridMaterial";
 
-import { GridMaterial } from "@babylonjs/materials";
+import "@babylonjs/core/Materials/standardMaterial";
+
 import { createCamera } from "./camera/camera";
 
 const createEngine = (canvas: HTMLCanvasElement) => {
@@ -67,12 +66,21 @@ export const createScene = async (
     scene
   );
 
-  // Move the sphere upward 1/2 its height
-  sphere.position.y = 1;
+  void Promise.all([
+    import("@babylonjs/core/Debug/debugLayer"),
+    import("@babylonjs/inspector"),
+  ]).then((_values) => {
+    console.log("hello from where the debug scene is shown");
+    scene.debugLayer.show({});
+  });
 
+  // Move the sphere upward 1/2 its height
+  // assign the grid material to the ground and then create the grid
   let gridMaterial = new GridMaterial("grid", scene);
-  gridMaterial.opacity = 0.9;
-  gridMaterial.majorUnitFrequency = 10;
+  gridMaterial.majorUnitFrequency = 5;
+  gridMaterial.minorUnitVisibility = 0;
+  gridMaterial.opacity = 0.98;
+  gridMaterial.mainColor = new Color3(1, 1, 1);
 
   let ground = MeshBuilder.CreateGround(
     "ground",
@@ -82,6 +90,8 @@ export const createScene = async (
     },
     scene
   );
+  ground.material = gridMaterial;
+
   ground.material = gridMaterial;
 
   engine.runRenderLoop(() => {

@@ -9,39 +9,44 @@
   dependencies:
     regenerator-runtime "^0.13.11"
 
-"@babylonjs/core@^6.12.1":
-  version "6.12.1"
-  resolved "https://registry.yarnpkg.com/@babylonjs/core/-/core-6.12.1.tgz#f6d197a3c5968c6bf9e9661d0defe5d4d4329ce4"
-  integrity sha512-8Rtrz8rki7UKqhYrGrYLtPs8txJmkMONJgbGL7JfqyYwaMBjAGGSHoAJmlseINir1lEDX9HNalT7SklUq6FAkg==
+"@babylonjs/core@^6.13.0":
+  version "6.13.0"
+  resolved "https://registry.yarnpkg.com/@babylonjs/core/-/core-6.13.0.tgz#24c4ab83c82a2585e8389c13dc596188e3ae5ebe"
+  integrity sha512-1HNiG+LuAN8etdyQC5CJZC7V7BnyK6KjDB959Zow1rhobX+fUwMjSVk/gU8h4RpzOwYcnoc3SFDL1d2ExJYqMw==
 
-"@babylonjs/gui-editor@^6.12.1":
-  version "6.12.1"
-  resolved "https://registry.yarnpkg.com/@babylonjs/gui-editor/-/gui-editor-6.12.1.tgz#7452a5fc6191491fd3d9175f20d1a86934cd45e5"
-  integrity sha512-cjwSj3s+KppAUVCqKNDo2kI5kddT8K2SpAoZz+mgDRvBtYcMS0oXP5JPamuGZGri9n51q4BzEJwLy2EegVGeyA==
+"@babylonjs/gui-editor@^6.13.0":
+  version "6.13.0"
+  resolved "https://registry.yarnpkg.com/@babylonjs/gui-editor/-/gui-editor-6.13.0.tgz#fabf1d29e41eb4f9c8efca77d7a747dc207b2ef2"
+  integrity sha512-0PVOp3Day9Sb8gzte2QCVzYSMNJX6TGqjqueFvbK/ydtLZI0pMLm+7kbZddf/KiNM39FVUVFLBhqSBkQl5KIdA==
 
-"@babylonjs/gui@^6.12.1":
-  version "6.12.1"
-  resolved "https://registry.yarnpkg.com/@babylonjs/gui/-/gui-6.12.1.tgz#28a5bed4cea14491a8ee256ce1da9bd4a576e924"
-  integrity sha512-BA2cmNIcSRQ/1DriS0HczP1G5OUgZdLBSLRw9f10W6frhbf+EAdh7Qmrz87sfSjC4pQX9Yer6TQT//lVD+eFgQ==
+"@babylonjs/gui@^6.13.0":
+  version "6.13.0"
+  resolved "https://registry.yarnpkg.com/@babylonjs/gui/-/gui-6.13.0.tgz#a7f079b6497ff920f1e0d661298a11f1f4cfbe34"
+  integrity sha512-FWKgsIrzgVpf2jaANVyubwRPlmoXpi5v8D3hnhC/l4Tzfq8PKXc5JLHqLO7NxVZdRwnNVeM3bETWJSnq9eBZ2A==
 
-"@babylonjs/inspector@^6.12.1":
-  version "6.12.1"
-  resolved "https://registry.yarnpkg.com/@babylonjs/inspector/-/inspector-6.12.1.tgz#56b68e0935b777938e533360146b8cf90dd86444"
-  integrity sha512-p1ZBMQrDAlQdj3oGwpxIL07h6BQ3rD5Bj9szqZwYl3qikseKYz3XnY4UuC3888e2QFF56UEGZMabfzRENuqgzQ==
+"@babylonjs/inspector@^6.13.0":
+  version "6.13.0"
+  resolved "https://registry.yarnpkg.com/@babylonjs/inspector/-/inspector-6.13.0.tgz#3ff36365cc49e310a117c84b0a9151eb29ffe227"
+  integrity sha512-aVAy9jL+UgLV8XtO3McFYX+THJoEAG4PQLRXe1TrycivfbzEbAl2Nnkd4zxVi1JEgkvr5fCC5WK472yLbyy99A==
   dependencies:
     "@fortawesome/fontawesome-svg-core" "^6.1.0"
     "@fortawesome/free-regular-svg-icons" "^6.0.0"
     "@fortawesome/free-solid-svg-icons" "^6.0.0"
 
-"@babylonjs/loaders@^6.12.1":
-  version "6.12.1"
-  resolved "https://registry.yarnpkg.com/@babylonjs/loaders/-/loaders-6.12.1.tgz#f167012e1be026b31abe328fc2f197983b43c1e3"
-  integrity sha512-srGP0VIgO60raXKTFjCUZmgVuV726MMMb/KsHFxN8G0JEfEwhI6M3dzavd52uv8BdveQZdWlmrG/j1Doj0Qguw==
+"@babylonjs/loaders@^6.13.0":
+  version "6.13.0"
+  resolved "https://registry.yarnpkg.com/@babylonjs/loaders/-/loaders-6.13.0.tgz#5fa3e9d7fff573ba01516461cb5c7bce4d5031e4"
+  integrity sha512-Dkmrna2seflAXOM/Fe8hz+YKJ4CpVsCBqDnAd7fiogg2mKYZwsSqmXB3PNj0Kw663j1dwtss+D3TSdtYgTZSUQ==
 
-"@babylonjs/materials@^6.11.2":
-  version "6.11.2"
-  resolved "https://registry.yarnpkg.com/@babylonjs/materials/-/materials-6.11.2.tgz#ece839ccf589c047034ac0b3f25cc25d13e649fe"
-  integrity sha512-wQ4JaDDY5YyfCPDzK8pUDZcmHdoVNs9r8q4HRX0rnuujW5PciU/7QaTW9UGuGwFetYzDXBXVe6eZNdpiBez1lA==
+"@babylonjs/materials@^6.13.0":
+  version "6.13.0"
+  resolved "https://registry.yarnpkg.com/@babylonjs/materials/-/materials-6.13.0.tgz#8a5486f1c2628987c93570c4268e58d691aa3ae1"
+  integrity sha512-7sMpHuy8GyWO8s6S6owTLsTenI0Tx9PNsR4aL38dNIq/UqvvYF1VMLFOgaib7paSwr/ESq08ucij4BB8dHEZQw==
+
+"@babylonjs/serializers@^6.13.0":
+  version "6.13.0"
+  resolved "https://registry.yarnpkg.com/@babylonjs/serializers/-/serializers-6.13.0.tgz#3fc60fd07a2e98cb80f6e3a05bab8ac50934d5f7"
+  integrity sha512-nTLBvEskV4tnirwJoLNqgjzAlth/TZuzotGBMs+xcOeDkXwb8GaDIvCas6DEK/9hM7/IhQyZQPLe9LCDlUTu1A==
 
 "@babylonjs/serializers@^6.12.1":
   version "6.12.1"
